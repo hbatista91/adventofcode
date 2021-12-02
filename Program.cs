@@ -1,8 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-using AdventOfCode2021.Days;
-using AdventOfCode2021.Days._1;
+﻿using AdventOfCode2021.Days;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("AdventOfCode 2021");
+var factory = new DayFactory();
 
-var d = new Day1();
-d.Run();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+Console.Write("Pick a day:");
+string day = Console.ReadLine();
+
+Console.Write("Pick sample or input data:");
+string source = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+
+factory.Run(day, source);

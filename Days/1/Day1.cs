@@ -7,17 +7,39 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Days._1
 {
-    public class Day1
+    public class Day1 : Day
     {
-        public void Run()
+        public override string Source { get; set; }
+
+        public Day1(string source)
         {
-            // Fetch input data
-            string[] text = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Days\\1\\input.data"));
+            Source = source;
+        }
+
+        public override void Run()
+        {
+            string[] text = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"Days\\1\\{Source}.data"));
 
             Console.WriteLine("########## Day 1 2021 ##########");
             Console.WriteLine($"Part one solution: {SolvePartOne(text)}");
             Console.WriteLine($"Part two solution: {SolvePartTwo(text)}");
             Console.WriteLine("################################");
+        }
+
+        private string SolvePartOne(string[] text)
+        {
+            var arrayOfInts = Array.ConvertAll(text, i => int.Parse(i));
+
+            var solution = 0;
+            for (int i = 0; i < arrayOfInts.Length - 1; i++)
+            {
+                if (arrayOfInts[i + 1] > arrayOfInts[i])
+                {
+                    solution++;
+                }
+            }
+
+            return solution.ToString();
         }
 
         private string SolvePartTwo(string[] text)
@@ -32,22 +54,6 @@ namespace AdventOfCode2021.Days._1
             }
 
             return SolvePartOne(Array.ConvertAll(slidingWindowSums.ToArray(), i => i.ToString()));
-        }
-
-        public string SolvePartOne(string[] text)
-        {
-            var arrayOfInts = Array.ConvertAll(text, i => int.Parse(i));
-
-            var solution = 0;
-            for (int i = 0; i < arrayOfInts.Length - 1; i++)
-            {
-                if (arrayOfInts[i + 1] > arrayOfInts[i])
-                {
-                    solution++;
-                }
-            }
-
-            return solution.ToString();
         }
     }
 }
