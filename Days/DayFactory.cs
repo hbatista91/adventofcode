@@ -1,10 +1,6 @@
 ﻿using AdventOfCode2021.Days._1;
 using AdventOfCode2021.Days._2;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AdventOfCode2021.Days._3;
 
 namespace AdventOfCode2021.Days
 {
@@ -34,6 +30,9 @@ namespace AdventOfCode2021.Days
                         break;
                     case 2:
                         d = new Day2(source);
+                        break;
+                    case 3:
+                        d = new Day3(source);
                         break;
                 }
 

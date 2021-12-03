@@ -21,7 +21,7 @@ namespace AdventOfCode2021.Days._2
         public override void Run()
         {
             // Fetch input data
-            string[] text = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Days\\2\\input.data"));
+            string[] text = File.ReadAllLines(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"Days\\2\\{Source}.data"));
 
             Console.WriteLine("########## Day 2 2021 ##########");
             Console.WriteLine($"Part one solution: {SolvePartOne(text)}");
