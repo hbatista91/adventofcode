@@ -32,6 +32,12 @@
     <None Update="Days\4\sample.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Days\7\input.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Days\7\sample.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Days\6\input.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
