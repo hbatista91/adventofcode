@@ -5,6 +5,7 @@ using AdventOfCode2021.Days._4;
 using AdventOfCode2021.Days._5;
 using AdventOfCode2021.Days._6;
 using AdventOfCode2021.Days._7;
+using AdventOfCode2021.Days._8;
 
 namespace AdventOfCode2021.Days
 {
@@ -49,6 +50,9 @@ namespace AdventOfCode2021.Days
                         break;
                     case 7:
                         d = new Day7(source);
+                        break;
+                    case 8:
+                        d = new Day8(source);
                         break;
                 }
 

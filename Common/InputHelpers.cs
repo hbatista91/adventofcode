@@ -13,5 +13,12 @@ namespace AdventOfCode2021.Common
             var items = text[0].Split(',').Select(x => int.Parse(x)).ToList();
             return items.GroupBy(x => x).ToDictionary(x => x.Key, x => x.Count());
         }
+
+        public static Dictionary<int, string> MapToStringDictionary(string[] text)
+        {
+            return text
+                .Select((x, i) => new { Item = x, Index = i })
+                .ToDictionary(x => x.Index, x => x.Item);
+        }
     }
 }
