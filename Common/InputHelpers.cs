@@ -20,5 +20,21 @@ namespace AdventOfCode2021.Common
                 .Select((x, i) => new { Item = x, Index = i })
                 .ToDictionary(x => x.Index, x => x.Item);
         }
+
+        public static int[,] MapToTwoDimensionalIntArray(string[] text)
+        {
+            var arr = new int[text.Count(), text[0].Length];
+
+            for(var i = 0; i < text.Count(); i++)
+            {
+                var s = text[i].ToCharArray().Select(x => int.Parse(x+"")).ToArray();
+                for(var j = 0; j < text[i].Length; j++)
+                {
+                    arr[i, j] = s[j];
+                }
+            }
+
+            return arr;
+        }
     }
 }
