@@ -9,6 +9,8 @@ using AdventOfCode2021.Days._8;
 using AdventOfCode2021.Days._9;
 using AdventOfCode2021.Days._10;
 using AdventOfCode2021.Days._11;
+using AdventOfCode2021.Days._13;
+using AdventOfCode2021.Days._14;
 
 namespace AdventOfCode2021.Days
 {
@@ -65,6 +67,12 @@ namespace AdventOfCode2021.Days
                         break;
                     case 11:
                         d = new Day11(source);
+                        break;
+                    case 13:
+                        d = new Day13(source);
+                        break;
+                    case 14:
+                        d = new Day14(source);
                         break;
                 }
 

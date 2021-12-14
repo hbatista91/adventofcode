@@ -8,10 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Days\11\input.data">
+    <None Update="Days\13\input.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Days\11\sample.data">
+    <None Update="Days\13\sample.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Days\14\input.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Days\14\sample.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Days\1\input.data">
@@ -38,30 +44,6 @@
     <None Update="Days\4\sample.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Days\10\input.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\10\sample.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\9\input.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\9\sample.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\8\input.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\8\sample.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\7\input.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Days\7\sample.data">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Days\6\input.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -74,14 +56,6 @@
     <None Update="Days\5\sample.data">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="2016\" />
-    <Folder Include="2017\" />
-    <Folder Include="2018\" />
-    <Folder Include="2019\" />
-    <Folder Include="2020\" />
   </ItemGroup>
 
 </Project>
