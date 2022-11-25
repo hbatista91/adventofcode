@@ -6,6 +6,9 @@
         {
             var dayPath = day <= 9 ? "0" + day : day.ToString();
             var samplePath = sampleFlag == true ? "-sample" : "";
+
+            // trim and remove extra spaces!
+
             return File.ReadAllLines(Path.Combine(AppContext.BaseDirectory, "data", $"day{dayPath}{samplePath}.data"));
         }
     }
