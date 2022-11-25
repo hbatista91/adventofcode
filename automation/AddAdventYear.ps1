@@ -1,5 +1,5 @@
 $year = Read-Host -Prompt "Enter Year"
-$days = 2..2
+$days = 1..25
 
 foreach ($item in $days)
 {
