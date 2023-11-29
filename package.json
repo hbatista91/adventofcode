@@ -1,0 +1,20 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "AdventOfCode Solutions JS Version",
+  "main": "index.js",
+  "scripts": {
+    "sync": "node automation/sync.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbatista91/adventofcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbatista91/adventofcode/issues"
+  },
+  "homepage": "https://github.com/hbatista91/adventofcode#readme"
+}
