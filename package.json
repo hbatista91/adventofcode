@@ -2,10 +2,12 @@
   "name": "adventofcode",
   "version": "1.0.0",
   "description": "AdventOfCode Solutions JS Version",
-  "main": "index.js",
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
-    "sync": "node automation/sync.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sync": "node automation/sync.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/hbatista91/adventofcode/issues"
   },
-  "homepage": "https://github.com/hbatista91/adventofcode#readme"
+  "homepage": "https://github.com/hbatista91/adventofcode#readme",
+  "dependencies": {
+    "got": "^14.0.0",
+    "jsdom": "^23.0.1"
+  },
+  "type": "module"
 }

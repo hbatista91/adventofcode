@@ -1,3 +1,9 @@
 {
-  "years": [{ "year": 2022, "maxDay": 2 }]
+  "years": [
+    {
+      "year": 2022,
+      "maxDay": 2,
+      "solutions": { "part-one": [{ "1": "1" }, { "2": "2" }], "part-two": [] }
+    }
+  ]
 }
